@@ -60,6 +60,9 @@ print(desvio)
 print(altura)
 print((altura-media)/desvio) #ZSCORE
 
+series_teste = pd.Series([10, 15, 20, 25, 30, 35, 40, 45, 50])
+percentil = sum(np.abs(series_teste) < 20) / float(len(series_teste))*100
+print("TESTE<",percentil)
 # print('O valor mediana é: {}'.format(women_height_series.median()))
 
 # print('O valor mínimo é: {}'.format(men_height_series.min()))
